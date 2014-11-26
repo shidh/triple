@@ -1,7 +1,9 @@
 triple
 ======
 Landing page for triple3D.
+======
 
+How to join development：
 
 I. System Requirements
   - Play Framework version 1.2.7: http://www.playframework.com/download
