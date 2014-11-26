@@ -3,14 +3,37 @@
 <html>
     <head>
         <title>#{get 'title' /}</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
         <meta charset="${_response_encoding}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/site_global.css'}"/>
+	    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'}" id="pagesheet"/>
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/museutils.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery.scrolleffects.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery.watch.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/webpro.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/musewpslideshow.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery.museoverlay.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/touchswipe.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery.musepolyfill.bgsize.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
+          	<script type="text/javascript">
+   			document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/poiret-one:n4:all.js" type="text/javascript">\x3C/script>');
+			</script>
+  			
+  			<script type="text/javascript">
+  	 		document.documentElement.className += ' js'; 
+  	 		var __adobewebfontsappname__ = "muse";
+			</script>
+
     </head>
     <body>
         #{doLayout /}
     </body>
 </html>
+
+
+
